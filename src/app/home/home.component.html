@@ -1,0 +1,80 @@
+
+  <app-navbar></app-navbar>
+<div class="container centerdiv">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://unsplash.com/photos/wX2L8L-fGeA/download?force=true" class="d-block w-100" alt="..." width="500px" height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <a [routerLink]="['home']"><h5>Home</h5></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://unsplash.com/photos/ZDwh_sxsX2g/download?force=true" class="d-block w-100" alt="..." width="500px" height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <a [routerLink]="['about']"><h5>About</h5></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://unsplash.com/photos/ZV_64LdGoao/download?force=true" class="d-block w-100" alt="..." width="500px" height="400px">
+        <div class="carousel-caption d-none d-md-block">
+          <a [routerLink]="['userlist']"><h5>User List</h5></a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card" style="border-radius: 50px;">
+        <img src="https://unsplash.com/photos/Abida9j2_F0/download?force=true&w=640" height="200px" class="card-img-top" alt="..." style="padding-bottom: 0px; margin-bottom: 0px; border-radius: 50px;">
+        <img src="https://unsplash.com/photos/wX2L8L-fGeA/download?force=true" class="rounded-circle centerdiv" width="100px" height="100px" style="margin-top: 0px; padding-top: 0px;">
+        <div class="card-body">
+          <h5 class="card-title">Home</h5>
+          <p class="card-text">This Card is all about the Homepage</p>
+          <hr>
+          <button class="btn btn-outline-success" style="border-radius: 50px;"><a class="button-link" (click)="goToHome()">Home</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="border-radius: 50px;">
+        <img src="https://unsplash.com/photos/Xr1Lwph6eGI/download?force=true&w=640" height="200px" class="card-img-top" alt="..." style="padding-bottom: 0px; margin-bottom: 0px; border-radius: 50px;">
+        <img src="https://unsplash.com/photos/ZDwh_sxsX2g/download?force=true" class="rounded-circle centerdiv" width="100px" height="100px" style="margin-top: 0px; padding-top: 0px;">
+        <div class="card-body">
+          <h5 class="card-title">About</h5>
+          <p class="card-text">This Card is all about the Project</p>
+          <hr>
+          <button class="btn btn-outline-success" style="border-radius: 50px;"><a class="button-link" (click)="goToAbout()">About</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="border-radius: 50px;">
+        <img src="https://unsplash.com/photos/LG8ToawE8WQ/download?force=true&w=640" height="200px" class="card-img-top" alt="..." style="padding-bottom: 0px; margin-bottom: 0px; border-radius: 50px;">
+        <img src="https://unsplash.com/photos/ZV_64LdGoao/download?force=true" class="rounded-circle centerdiv" width="100px" height="100px" style="margin-top: 0px; padding-top: 0px;">
+        <div class="card-body">
+          <h5 class="card-title">Users List</h5>
+          <p class="card-text">This Card is all aout the Users List of GitHub</p>
+          <hr>
+          <button class="btn btn-outline-success" style="border-radius: 50px;"><a class="button-link" (click)="goToUserlist()">User List</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

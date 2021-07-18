@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+
+<section class="section">
+  <div class="container">
+    <br>
+    <br>
+    <h1 class="center">List of GitHub Users</h1>
+    <hr>
+    <div class="row" *ngIf="users">
+      <div class="col col-md-3" *ngFor="let user of users | async">
+        <a href="user/{{ user.login }}">
+        <div class="card">
+          <img src="{{ user.avatar_url }}" class="rounded-circle">
+          <p class="center">{{ user.login }}</p>
+        </div></a>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<app-footer></app-footer>

@@ -1,0 +1,22 @@
+.centerdiv{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.fa-heart{
+  color: crimson;
+}
+
+p{
+  color: white;
+}
+
+footer{
+  background-color: black;
+}

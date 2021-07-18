@@ -1,0 +1,14 @@
+.centerdiv{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container{
+  width: 80%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}

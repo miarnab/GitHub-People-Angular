@@ -1,0 +1,10 @@
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container{
+  width: 80%;
+  background-color: white;
+}

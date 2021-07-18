@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<section class="section">
+  <div class="container">
+    <br>
+    <br>
+    <div class="card" *ngIf="user">
+      <h2 class="center">{{ user.login }}</h2>
+      <img [src]="user.avatar_url" height="300px" width="300px" class="rounded-circle center">
+      <h3 class="center">{{ user.type }}</h3>
+    </div>
+    <br>
+    <br>
+  </div>
+  </section>
+<br>
+<br>
+<app-footer></app-footer>
