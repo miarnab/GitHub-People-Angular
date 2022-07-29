@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class UserComponent implements OnInit {
   [user: string]: any;
+
   constructor(private userService: UserService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -22,4 +23,8 @@ export class UserComponent implements OnInit {
 
 }
 
+
+function getRepos(userid: any) {
+  throw new Error('Function not implemented.');
+}
 

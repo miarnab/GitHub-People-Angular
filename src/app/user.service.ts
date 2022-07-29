@@ -15,5 +15,8 @@ export class UserService {
   getUser(id: string){
     return this.http.get(`${this.apiUrl}/${id}`);
   }
+  getRepos(id: string){
+    return this.http.get(`${this.apiUrl}/${id}/repos`);
+  }
 
 }
