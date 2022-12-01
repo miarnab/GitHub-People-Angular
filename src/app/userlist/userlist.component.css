@@ -1,5 +1,5 @@
 .container{
-  background-color: white;
+  background-color: transparent;
 }
 
 .center{
@@ -8,7 +8,21 @@
   text-align: center;
 }
 
+h1{
+  color: white;
+}
+
 a{
   text-decoration: none;
   color: black;
+}
+
+.card:hover{
+  background-color: black;
+  color: white;
+  animation: mymove 2s 1 linear;
+}
+
+@keyframes mymove {
+  100% {transform: rotate(360deg);}
 }
